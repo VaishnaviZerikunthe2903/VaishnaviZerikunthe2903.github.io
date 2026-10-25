@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Zerikunthe | Java & Spring Boot Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        dark: '#0f172a',
+                        card: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-slate-200 font-sans leading-relaxed selection:bg-primary selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-dark/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white tracking-wider">
+                &lt;<span class="text-primary">Vaishnavi</span>.Dev /&gt;
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#skills" class="hover:text-primary transition">Skills</a>
+                <a href="#experience" class="hover:text-primary transition">Experience</a>
+                <a href="#projects" class="hover:text-primary transition">Projects</a>
+                <a href="#education" class="hover:text-primary transition">Education</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-primary hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+                Hire Me
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 md:pt-40 md:pb-28 px-6 max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="md:w-3/5 space-y-6 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider text-primary uppercase bg-blue-500/10 rounded-full border border-blue-500/20">
+                <i class="fa-solid fa-location-dot"></i> Pune, Maharashtra • Available for Opportunities
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Vaishnavi Zerikunthe</span>
+            </h1>
+            <h2 class="text-xl md:text-2xl font-medium text-slate-400">
+                Software Engineer | Java, Spring Boot & Microservices
+            </h2>
+            <p class="text-slate-400 max-w-xl mx-auto md:mx-0">
+                Software Developer with 4.7+ years of experience building scalable, secure enterprise applications in the Banking and Financial Services domain. Specialized in Java (8/11/21), Spring Boot Microservices, Hibernate/JPA, Kong API Gateway, and cloud deployments on Google Cloud Platform (GCP).
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                <a href="#projects" class="bg-primary hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition shadow-lg shadow-blue-500/25">
+                    View My Work
+                </a>
+                <!-- If you put your PDF in the same folder named 'Resume.pdf', this button will download it directly -->
+                <a href="Resume.pdf" target="_blank" class="bg-card hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-lg border border-slate-700 transition flex items-center gap-2">
+                    <i class="fa-solid fa-download text-sm"></i> Download Resume
+                </a>
+            </div>
+            <div class="flex justify-center md:justify-start space-x-5 pt-4 text-slate-400 text-xl">
+                <a href="https://www.linkedin.com/in/vaishnavi-zerikunthe-9b2787148" target="_blank" title="LinkedIn" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:vaishnavizerikunthe123@gmail.com" title="Email" class="hover:text-red-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+917028292483" title="Call +91 7028292483" class="hover:text-emerald-400 transition"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://github.com/" target="_blank" title="GitHub" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="md:w-2/5 flex justify-center">
+            <!-- Replace src with your own photo path (e.g., 'profile.jpg') if desired -->
+            <div class="w-56 h-56 md:w-72 md:h-72 rounded-full p-2 bg-gradient-to-tr from-blue-500 to-emerald-400 shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                     alt="Vaishnavi Zerikunthe" 
+                     class="w-full h-full object-cover rounded-full border-4 border-dark">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-slate-900/50 border-y border-slate-800/80 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl font-bold text-white">Technical Arsenal</h2>
+                <p class="text-slate-400 mt-2">Core technologies, frameworks, and tools from my 4.7+ years of experience</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-card p-6 rounded-xl border border-slate-800 hover:border-primary/50 transition">
+                    <div class="w-12 h-12 bg-blue-500/10 text-primary flex items-center justify-center rounded-lg text-2xl mb-4">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Java & Backend Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Java (8, 11)</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Azul Zulu 21</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Spring Boot</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Spring Security</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Spring Cloud</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Hibernate / JPA</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Multithreading</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Collections & OOP</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Servlets & JDBC</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="bg-card p-6 rounded-xl border border-slate-800 hover:border-emerald-500/50 transition">
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 flex items-center justify-center rounded-lg text-2xl mb-4">
+                        <i class="fa-solid fa-cloud-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Microservices, Cloud & Architecture</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Microservices Architecture</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Google Cloud Platform (GCP)</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Kong API Gateway</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Feign Client</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Apache Kafka</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">RESTful APIs</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Design Patterns</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Spring Cache</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">PCI DSS Security</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="bg-card p-6 rounded-xl border border-slate-800 hover:border-purple-500/50 transition">
+                    <div class="w-12 h-12 bg-purple-500/10 text-purple-400 flex items-center justify-center rounded-lg text-2xl mb-4">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Databases, Testing & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">SQL & H2</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Flyway</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">JUnit 5</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Postman</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Swagger / OpenAPI</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Docker</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Git & GitHub</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">Maven</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">IntelliJ IDEA / STS</span>
+                        <span class="px-3 py-1 bg-dark text-xs font-medium rounded-md border border-slate-700">JIRA / Agile Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold text-white">Work Experience</h2>
+            <p class="text-slate-400 mt-2">My professional journey across Banking, Financial Services, and Payment Systems</p>
+        </div>
+
+        <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+            
+            <!-- Experience Item 1: Capgemini -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-primary bg-dark text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow">
+                    <i class="fa-solid fa-briefcase text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-slate-800 hover:border-primary/40 transition">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                        <h3 class="font-bold text-white text-lg">Software Engineer</h3>
+                        <time class="text-xs font-semibold text-primary bg-blue-500/10 px-2.5 py-1 rounded-full">May 2025 - Present</time>
+                    </div>
+                    <div class="text-sm text-emerald-400 font-medium mb-3">Capgemini • Client: HSBC (Sales Suitability)</div>
+                    <ul class="text-sm text-slate-400 list-disc list-inside space-y-1.5">
+                        <li>Migrating a legacy Sales Suitability Application to a scalable Spring Boot microservices architecture to boost performance and maintainability.</li>
+                        <li>Designing and developing RESTful APIs for customer assessment, product eligibility, and suitability validation workflows.</li>
+                        <li>Implementing downstream inter-service communication using Feign Clients and centralizing API routing & security via Kong API Gateway.</li>
+                        <li>Deploying and managing cloud-native applications on Google Cloud Platform (GCP).</li>
+                        <li>Developing dynamic PDF generation using iText Ditto templates and integrating automated email notification workflows.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience Item 2: Aurus Tech (STPL) -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-dark text-emerald-400 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <i class="fa-solid fa-code text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                        <h3 class="font-bold text-white text-lg">Software Developer</h3>
+                        <time class="text-xs font-semibold text-slate-400 bg-slate-800 px-2.5 py-1 rounded-full">Dec 2023 - Apr 2025</time>
+                    </div>
+                    <div class="text-sm text-emerald-400 font-medium mb-3">Aurus Tech Pvt Ltd • Project: STPL</div>
+                    <ul class="text-sm text-slate-400 list-disc list-inside space-y-1.5">
+                        <li>Developed a Secure Transaction Processing and Logging (STPL) Spring Boot application to store, manage, and analyze sensitive transaction records.</li>
+                        <li>Created REST APIs for storing, retrieving from SQL databases, and displaying transaction details on the client portal.</li>
+                        <li>Configured Global Exception Handling using <code class="text-xs text-blue-300">@RestControllerAdvice</code> and <code class="text-xs text-blue-300">@ExceptionHandler</code> for structured error responses.</li>
+                        <li>Implemented Spring Cache strategies to optimize performance and reduce database load for frequently accessed data.</li>
+                        <li>Configured Spring Boot Profiles (dev, QA, prod) and comprehensive application logging for rapid debugging.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Experience Item 3: Aurus Tech (SDK & Retail Clients) -->
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-dark text-purple-400 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <i class="fa-solid fa-shield-halved text-sm"></i>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-card p-6 rounded-xl border border-slate-800 hover:border-purple-500/40 transition">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                        <h3 class="font-bold text-white text-lg">Software Developer</h3>
+                        <time class="text-xs font-semibold text-slate-400 bg-slate-800 px-2.5 py-1 rounded-full">Aug 2021 - Dec 2023</time>
+                    </div>
+                    <div class="text-sm text-emerald-400 font-medium mb-3">Aurus Tech Pvt Ltd • Projects: O'Reilly, Maurices, At Home</div>
+                    <ul class="text-sm text-slate-400 list-disc list-inside space-y-1.5">
+                        <li>Built and maintained high-throughput Java applications using OOP, Collections, Java 8 features, and Multithreading for secure transaction processing.</li>
+                        <li>Designed a server-client architecture using TCP/IP and Serial communication protocols with a Heartbeat mechanism for continuous connection monitoring.</li>
+                        <li>Applied the Factory Design Pattern in the SDK project to dynamically instantiate service classes based on API types.</li>
+                        <li>Implemented encryption and Log4j2 log masking techniques to protect sensitive cardholder data and ensure strict PCI DSS compliance.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 px-6 max-w-4xl mx-auto border-t border-slate-800/80">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-white">Education</h2>
+        </div>
+        <div class="bg-card p-6 md:p-8 rounded-xl border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-blue-500/10 text-primary flex items-center justify-center rounded-lg text-2xl shrink-0 mt-1 md:mt-0">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white">Bachelor of Engineering in Electronics and Telecommunication</h3>
+                    <p class="text-slate-400 mt-1">Government College of Engineering and Research, Avasari Khurd - Pune</p>
+                </div>
+            </div>
+            <div class="text-sm font-semibold text-primary bg-blue-500/10 px-4 py-1.5 rounded-full shrink-0">
+                2016 - 2019
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900/50 border-t border-slate-800/80 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
+            <p class="text-slate-400 mb-8">
+                I'm open to Software Engineer / Backend Java & Spring Boot Developer roles. Feel free to reach out via email, phone, or LinkedIn!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a href="mailto:vaishnavizerikunthe123@gmail.com" class="inline-flex items-center gap-2 bg-primary hover:bg-blue-600 text-white font-semibold px-6 py-3.5 rounded-lg transition shadow-lg shadow-blue-500/25">
+                    <i class="fa-regular fa-paper-plane"></i> vaishnavizerikunthe123@gmail.com
+                </a>
+                <a href="tel:+917028292483" class="inline-flex items-center gap-2 bg-card hover:bg-slate-700 text-white font-semibold px-6 py-3.5 rounded-lg border border-slate-700 transition">
+                    <i class="fa-solid fa-phone text-emerald-400"></i> +91 7028292483
+                </a>
+                <a href="https://www.linkedin.com/in/vaishnavi-zerikunthe-9b2787148" target="_blank" class="inline-flex items-center gap-2 bg-card hover:bg-slate-700 text-white font-semibold px-6 py-3.5 rounded-lg border border-slate-700 transition">
+                    <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-slate-800 text-center text-xs text-slate-500">
+        <p>© 2026 Vaishnavi Zerikunthe • Pune, Maharashtra. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
